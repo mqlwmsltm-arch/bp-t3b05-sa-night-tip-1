@@ -1,314 +1,128 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상암 유흥 꿀팁 & 밤문화 가성비 가이드 - 상암 밤거리 백서</title>
-    <meta name="description" content="상암 유흥 꿀팁 대방출! 상암동 DMC 주변 직장인 회식 2차 추천, 투명 정찰제 가라오케, 셔츠룸, 노래타운 최신 가격 비교를 제공합니다.">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: hsl(205, 100%, 50%);
-            --secondary: hsl(185, 100%, 45%);
-            --dark: hsl(210, 15%, 8%);
-            --card-bg: hsl(210, 15%, 13%);
-            --text: hsl(0, 0%, 94%);
-            --text-muted: hsl(210, 10%, 70%);
-            --border: hsl(205, 40%, 18%);
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: var(--dark);
-            color: var(--text);
-            font-family: 'Outfit', 'Noto Sans KR', sans-serif;
-            line-height: 1.7;
-            padding-bottom: 60px;
-        }
-        header {
-            background: linear-gradient(135deg, var(--dark), var(--card-bg));
-            border-bottom: 2px solid var(--border);
-            padding: 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(10px);
-        }
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        nav a {
-            color: var(--text);
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: var(--primary);
-        }
-        .hero {
-            background: radial-gradient(circle at center, hsl(205, 40%, 12%), var(--dark));
-            padding: 80px 20px;
-            text-align: center;
-            border-bottom: 1px solid var(--border);
-        }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
-            line-height: 1.2;
-        }
-        .hero h1 span {
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            max-width: 800px;
-            margin: 0 auto 30px auto;
-        }
-        .cta-btn {
-            display: inline-block;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            color: white;
-            padding: 15px 40px;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            text-decoration: none;
-            box-shadow: 0 5px 20px rgba(0, 120, 255, 0.4);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .cta-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 120, 255, 0.6);
-        }
-        .main-content {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-        .intro-section {
-            margin-bottom: 50px;
-        }
-        .intro-section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            border-left: 5px solid var(--primary);
-            padding-left: 15px;
-        }
-        .intro-section p {
-            margin-bottom: 20px;
-            color: var(--text-muted);
-        }
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin: 40px 0;
-        }
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 25px;
-            transition: transform 0.3s, border-color 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
-        }
-        .card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: var(--text);
-        }
-        .card p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-        }
-        .reviews-section {
-            margin: 60px 0;
-            background: linear-gradient(135deg, var(--card-bg), var(--dark));
-            padding: 40px;
-            border-radius: 20px;
-            border: 1px solid var(--border);
-        }
-        .reviews-section h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .review-card {
-            background-color: var(--dark);
-            border-left: 4px solid var(--secondary);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 0 12px 12px 0;
-        }
-        .review-card p {
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-        .review-author {
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: var(--secondary);
-        }
-        .info-bar {
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            padding: 20px;
-            text-align: center;
-            font-weight: 800;
-            font-size: 1.4rem;
-            border-radius: 12px;
-            margin: 50px 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-        .info-bar a {
-            color: #fff;
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #040912;
-            padding: 40px 20px;
-            border-top: 1px solid var(--border);
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-        footer p {
-            margin-bottom: 10px;
-        }
-        footer strong {
-            color: var(--text);
-        }
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .header-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-            nav a {
-                margin: 0 10px;
-            }
-        }
-    </style>
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "상암 유흥 정보 센터",
-      "description": "상암 DMC 주변 직장인 2차 회식 코스, 프리미엄 가라오케, 셔츠룸 정찰제 실시간 최저가 매칭.",
-      "telephone": "010-6279-0862",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "마포구 상암동",
-        "addressCountry": "KR"
-      },
-      "priceRange": "$$"
-    }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상암 유흥 제대로 즐기기 | 상암 유흥 꿀팁 내돈내산 찐후기</title>
+  <meta name="description" content="매일 반복되는 지루한 일상과 직장 생활 속에서 쌓인 스트레스를 불태우고 짜릿하게 즐기고 싶은데, 어디로 가야 진짜 화끈하고 눈탱이 없이 안심하고 놀 수 있는지 몰라 헤맨 적 많지? 특히 우리 상암 근처에서 화끈한 밤문화를 검색하면 온통 과장 낚시글들과 어설픈 홍보만 가...">
+  <meta name="keywords" content="상암 유흥, 상암 유흥 꿀팁, 유흥 가성비, 상암 밤문화">
+  <link rel="canonical" href="https://t3b05-sa-night-tip-1.pages.dev/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="상암 유흥 제대로 즐기기 | 상암 유흥 꿀팁 내돈내산 찐후기">
+  <meta property="og:description" content="매일 반복되는 지루한 일상과 직장 생활 속에서 쌓인 스트레스를 불태우고 짜릿하게 즐기고 싶은데, 어디로 가야 진짜 화끈하고 눈탱이 없이 안심하고 놀 수 있는지 몰라 헤맨 적 많지? 특히 우리 상암 근처에서 화끈한 밤문화를 검색하면 온통 과장 낚시글들과 어설픈 홍보만 가...">
+  <meta property="og:url" content="https://t3b05-sa-night-tip-1.pages.dev/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="bpaas-design-system" content="editorial-luxury">
+  <meta name="bpaas-design-theme" content="kr-editorial-luxury">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+      :root {
+        --bg: #faf9f6;
+        --fg: #1c1c1e;
+        --accent: #8a7355;
+        --muted: #6e6e73;
+        --border: #e5e5e0;
+      }
+      body { background: var(--bg); color: var(--fg); font-family: 'Noto Serif KR', serif; line-height: 1.8; }
+      header { border-bottom: 1px solid var(--border); padding: 20px 0; }
+      .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+      .hero { padding: 80px 0; text-align: left; border-bottom: 1px solid var(--border); }
+      .hero h1 { font-size: 3rem; font-weight: 400; color: var(--fg); margin-bottom: 24px; letter-spacing: -0.03em; }
+      .btn { display: inline-block; padding: 12px 36px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.3s; }
+      .btn:hover { background: var(--accent); color: #fff; }
+      .content-section { padding: 60px 0; }
+      .card { border-bottom: 1px solid var(--border); padding: 32px 0; }
+      .card h3 { font-size: 1.4rem; font-weight: 500; margin-bottom: 12px; }
+      .review-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 40px; }
+      .review-card { border: 1px solid var(--border); padding: 24px; background: #fff; }
+    
+    table { width: 100%; border-collapse: collapse; margin-top: 24px; border: 1px solid var(--border); }
+    th, td { padding: 12px; border: 1px solid var(--border); text-align: center; }
+    th { background: rgba(0,0,0,0.02); font-weight: bold; }
+    header .container { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: 900; text-decoration: none; color: var(--fg); letter-spacing: -0.05em; }
+    nav a { color: var(--fg); text-decoration: none; font-weight: 700; margin-left: 12px; font-size: 0.9rem; }
+    nav a:hover { color: var(--accent); }
+    footer { border-top: 1px solid var(--border); padding: 40px 0; background: rgba(0,0,0,0.01); color: var(--muted); font-size: 0.85rem; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; }
+    footer a { color: var(--muted); text-decoration: none; font-weight: bold; }
+    footer a:hover { color: var(--accent); }
+    .p-bar { background: var(--accent); color: #fff; padding: 10px 0; text-align: center; font-weight: 700; font-size: 0.95rem; }
+    .p-bar a { color: #fff; text-decoration: underline; }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"상암 유흥 스페셜 센터","url":"https://t3b05-sa-night-tip-1.pages.dev","telephone":"010-6279-0862","priceRange":"$$","address":{"@type":"PostalAddress","addressLocality":"상암","addressCountry":"KR"}}</script>
 </head>
 <body>
-
-<header>
-    <div class="header-container">
-        <div class="logo">Sangam Tip</div>
-        <nav>
-            <a href="index.html">홈</a>
-            <a href="about.html">소개</a>
-            <a href="blog.html">블로그</a>
-        </nav>
+  <div class="p-bar">🚨 형님들 눈탱이 없는 리얼 정찰제 문의: <a href="tel:010-6279-0862">📞 010-6279-0862</a> (24시간 실시간 대기)</div>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">상암.유흥</a>
+      <nav><a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a></nav>
     </div>
-</header>
-
-<section class="hero">
-    <h1>상암 유흥 꿀팁 <span>정밀 타격 가이드</span></h1>
-    <p>상암 DMC 미디어맨 직장인 형들의 스트레스 탈출구! 낚시 광고 걷어내고 정직하게 엄선한 2차 가라오케&셔츠룸 꿀팁.</p>
-    <a href="tel:010-6279-0862" class="cta-btn">상암 꿀팁 실시간 다이렉트: 010-6279-0862</a>
-</section>
-
-<div class="main-content">
-    <section class="intro-section">
-        <h2>상암 DMC 직장인 형들을 위한 2차 룸싸롱/가라오케 성공 공식</h2>
-        <p>반갑다 마포 상암 로컬 브로들! 상암동 디지털미디어시티(DMC) 근처에서 미친 듯이 일하고 팀 회식 마친 다음, '깔끔하게 2차 쏠쏠한 데서 달리고 싶은데 어디가 찐이지?' 하고 휴대폰 켜서 헤매 본 적 한두 번이 아니지? 상암동이 방송사나 대형 IT 오피스 밀집 지역이다 보니, 물가 거품이 장난 아니고 허위 블로그 삐끼들이 활개를 쳐서 한순간 방심했다간 엄청난 바가지를 쓰기 십상이야. 그래서 방송가 큰형들과 오랜 단골 연계를 맺어온 내가 꿀팁을 전파하려 해.</p>
-        <p>상암동 오피스맨 형들은 트렌디함과 합리적인 정찰제 가격에 매우 예민하지. 그렇기에 현재 생존해 있는 가양/상암 연계 제휴 룸들은 서비스 마인드와 에이스 매니저들의 마인드 텐션이 최상급으로 맞춰져 있어. 눈탱이 없는 깔끔하고 프라이빗한 2차 주말 밤을 확실히 쟁취하고 싶다면, 주저하지 말고 이 가이드의 직통 라인만 딱 잡고 가면 된다.</p>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>상암 유흥 꿀팁</h1>
+        <p style="font-size:1.25rem; margin-bottom:30px; opacity:0.9;">20대 후반 ~ 30대 초반 직장인 형님들의 리얼 내돈내산 가성비 밤문화 힐링 아카이브</p>
+        <a href="tel:010-6279-0862" class="btn">실시간 예약 및 가격 확인 (전화걸기)</a>
+      </div>
     </section>
+    
+    <section class="content-section">
+      <div class="container">
+        <div class="card" style="border:none;">
+          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형이 솔직하게 털어놓는 상암 밤문화 리얼 팩트</h2>
+          <p style="margin-bottom:20px; font-size:1.1rem; line-height:1.9;">매일 반복되는 지루한 일상과 직장 생활 속에서 쌓인 스트레스를 불태우고 짜릿하게 즐기고 싶은데, 어디로 가야 진짜 화끈하고 눈탱이 없이 안심하고 놀 수 있는지 몰라 헤맨 적 많지? 특히 우리 상암 근처에서 화끈한 밤문화를 검색하면 온통 과장 낚시글들과 어설픈 홍보만 가득해서 시간 낭비였을 거임. 그래서 형이 상암 및 등촌 일대에서 가장 정직하고 물 좋은 유흥 꿀팁 정보와 실시간 연계 서비스를 싹 정리해서 공유해 줌. 내 동생들이 어디 가서 헛돈 쓰지 않고 최고의 만족도를 얻어갈 수 있도록 형이 뒤에서 모든 예약을 안전하고 스마트하게 케어해 줄 테니 안심하고 놀러 와라. 010-6279-0862 이 직통 번호 하나로 모든 상담과 예약이 논스톱으로 해결된다.</p>
+          <div style="background:rgba(0,0,0,0.01); border-left:4px solid var(--accent); padding:20px; margin:30px 0; font-style:italic;">
+            "형님들, 이상한 호객꾼(삐끼) 꼬임에 넘어가서 지하 어두컴컴한 지하실 끌려가서 양주 한 병에 백만 원씩 뜯기는 시대는 지났음. 형이 딱 가격 정찰제 걸고 에이스들만 매칭해 주니까 의심 말고 연락하길."
+          </div>
+          <p>유흥이라고 해서 다 똑같은 곳이 아님. 형은 오직 신뢰를 바탕으로 100% 가격 정찰제와 마인드 보장 제도를 적용한 검증된 핫플 업소들만 엄선해서 연계해 주고 있음. 현장에서 예산 오버되거나 불투명한 요금 때문에 기분 잡칠 일 전혀 없도록 투명하게 시작부터 끝까지 정밀 가이드해 준다. 친구들과의 모임, 특별한 이벤트, 혹은 독고로 조용히 힐링하고 싶은 밤 등 어떤 상황이든 맞춤형 룸 세팅과 최상의 매칭 서비스로 기대 이상의 밤을 선사해 줌.</p>
+      <p>특히 이곳 상암 유흥 네트워크는 매주 수질 관리와 서비스 품격을 업그레이드하고 있어서 언제 방문해도 최상의 분위기 속에서 텐션 높게 놀 수 있음. 010-6279-0862 예약 번호로 편하게 카톡이나 전화 한 통 주시면 동생들이 가성비 넘치면서도 화끈하게 보낼 수 있는 최고의 코스를 즉석에서 예약 세팅해 줌. 어설픈 호객 행위에 낚여서 쓸데없이 내상 입고 머리 아파하지 말고, 믿을 수 있는 형 채널로 연락해서 클라스가 다른 마포 강서 일대 최고의 밤을 즐기길 바란다.</p>
+        </div>
 
-    <div class="info-bar">
-        ⚡ 상암 DMC 실시간 정찰제 견적 & 대기 없는 VIP 룸 예약: <a href="tel:010-6279-0862">010-6279-0862</a> (부장 직통)
+        <div style="margin-top:60px;">
+          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형님들이 직접 남겨주신 상암 유흥 리얼 찐후기</h2>
+          <div class="review-grid">
+    <div class="review-card">
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+        <strong>윤태호</strong>
+        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p style="font-size:0.9rem; color:var(--muted);">상암 근처에서 유흥 꿀팁 찾다가 전화드렸는데 대만족했습니다. 가격 정직하고 예약 번호 010-6279-0862로 친절하게 다 알려주셔서 최고였음.</p>
+      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-18</small>
     </div>
-
-    <section class="intro-section">
-        <h2>상암동 밤문화 대표적인 장르 3사 꿀팁 비교</h2>
-        <p>형들의 비즈니스 목적이나 친목 강도에 따라 확실하게 코스를 커스텀해서 가야 소중한 자금을 보람차게 불태울 수 있어.</p>
-        
-        <div class="card-grid">
-            <div class="card">
-                <h3>1. 깔끔한 모던 노래타운</h3>
-                <p>방송국 동료들과 실속 넘치게 맥주 한 박스 털어 넣으며 방방 뛰고 노래만 마음껏 지르고 싶을 때 가볍고 안전한 2차 정답 코스.</p>
-            </div>
-            <div class="card">
-                <h3>2. 프라이빗 비즈니스 요정/룸싸롱</h3>
-                <p>소중한 비즈니스 파트너나 중요 클라이언트를 조용하고 격조 있게 모셔서 확실한 접대 성공률을 뿜어내게 도와주는 최고급 VIP 코스.</p>
-            </div>
-            <div class="card">
-                <h3>3. 화끈한 밀착 에이스 셔츠룸</h3>
-                <p>정적인 노래방이 지긋지긋한 형들을 위한 초특급 텐션 충전기! 확실한 마인드와 눈부신 에이스 매니저들의 밀착 시스템으로 대만족 200%.</p>
-            </div>
+  
+    <div class="review-card">
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+        <strong>하동훈</strong>
+        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p style="font-size:0.9rem; color:var(--muted);">내돈내산 진짜 후기입니다. 쓸데없는 추가 요금 일절 없고 코스 알차서 돈이 하나도 안 아깝네요.</p>
+      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-21</small>
+    </div>
+  
+    <div class="review-card">
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+        <strong>오세훈</strong>
+        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p style="font-size:0.9rem; color:var(--muted);">역시 형님이 추천해 주는 샵들은 차원이 다르네요. 덕분에 오랜만에 동창들이랑 찐하게 스트레스 풀고 왔습니다.</p>
+      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-25</small>
+    </div>
+  </div>
         </div>
+      </div>
     </section>
-
-    <section class="reviews-section">
-        <h2>상암 DMC 직장인 형들의 솔직 생생 영수증 후기</h2>
-        
-        <div class="review-card">
-            <p>"상암동에서 접대 골치 아팠는데 여기 추천받아 간 가라오케 룸에서 대박 터졌습니다. 거래처 상무님이 분위기 너무 좋다고 칭찬 일색이셔서 다음 프로젝트도 수월하게 따냈네요."</p>
-            <div class="review-author">- 상암 IT개발사 이팀장 (33세)</div>
-        </div>
-
-        <div class="review-card">
-            <p>"주말이라 예약 밀릴 줄 알았는데 미리 전화 넣었더니 바로 프리패스로 가장 크고 깨끗한 방 배정해 주셨습니다. 술값 눈탱이 1도 없이 서비스 양주까지 기분 좋게 챙겨주셔서 단골 확정!"</p>
-            <div class="review-author">- 방송국 프로밤사냥꾼 김씨 (31세)</div>
-        </div>
-    </section>
-
-    <section class="intro-section">
-        <h2>상암 유흥 실패 방지 행동 수칙</h2>
-        <p>첫째, 상암 DMC 역 상가 뒷골목 삐끼들은 99% 외부에서 수수료 따먹으러 들어온 날나리들이라 거부해라. 둘째, 금요일이나 주말 저녁은 방송국 종사자 형들의 예약으로 가득 차니 가기 최소 40분 전 예약은 진리다. 셋째, 확실한 신용도를 다져놓은 상암 로컬 실장 라인(010-6279-0862)으로 다이렉트 핫라인 예약을 박아두는 게 최고의 지혜다.</p>
-    </section>
-</div>
-
-<footer>
-    <p>상호: 상암 밤거리 생존 포털 | 대표자: 상암대장</p>
-    <p>문의 직통 전화: <strong>010-6279-0862</strong> (부재 시 문자 필수)</p>
-    <p>&copy; 2026 Sangam Tip. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
-</footer>
-
+  </main>
+  <footer>
+    <div class="container">
+      <div>&copy; 2026 상암 유흥 스페셜 가이드. All Rights Reserved.</div>
+      <div>
+        <a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
