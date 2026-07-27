@@ -1,375 +1,90 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <title>상암 유흥 꿀팁 | 정보 — 진짜 상암 즐기는 법</title>
-    <meta name="description" content="야, 상암 유흥 정보 싹 다 까발린다. 클럽 입장 팁, 술집 숨은 메뉴, 늦은 밤 이동 수단까지. 이거 모르면 상암에서 호구 된다. 지금 바로 체크.">
-    <meta name="keywords" content="상암 유흥 정보, 상암 클럽 정보, 상암 술집 정보, 상암 밤문화 팁, 상암 놀거리 정보, 상암 꿀팁">
-    <link rel="canonical" href="https://sangam-club-hot.node-link.shop/about.html">
-    <meta property="og:title" content="상암 유흥 정보 | 진짜 상암 즐기는 법">
-    <meta property="og:description" content="야, 상암 유흥 정보 싹 다 까발린다. 클럽 입장 팁, 술집 숨은 메뉴, 늦은 밤 이동 수단까지. 이거 모르면 상암에서 호구 된다. 지금 바로 체크.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sangam-club-hot.node-link.shop/about.html">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:site_name" content="상암 유흥 꿀팁">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="상암 유흥 정보 | 진짜 상암 즐기는 법">
-    <meta name="twitter:description" content="야, 상암 유흥 정보 싹 다 까발린다. 클럽 입장 팁, 술집 숨은 메뉴, 늦은 밤 이동 수단까지. 이거 모르면 상암에서 호구 된다.">
-    <meta name="twitter:domain" content="t3b05-sa-night-tip-1.vercel.app">
-    <link rel="alternate" hreflang="ko" href="https://t3b05-sa-night-tip-1.vercel.app/info">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* ----- RESET & BASE ----- */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        html {
-            scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%;
-        }
-        body {
-            font-family: 'Noto Sans KR', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: #1a1a1a;
-            color: #e0e0e0;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            overflow-x: hidden;
-        }
-        /* ----- TYPOGRAPHY (brutalist oversized) ----- */
-        h1, h2, h3, h4 {
-            font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-            line-height: 1.1;
-        }
-        h1 {
-            font-size: clamp(2.8rem, 12vw, 6rem);
-            color: #f5a623;
-            text-shadow: 4px 4px 0 #000, 6px 6px 0 rgba(245, 166, 35, 0.3);
-            margin-bottom: 0.3em;
-            word-break: break-word;
-        }
-        h2 {
-            font-size: clamp(2rem, 8vw, 3.5rem);
-            color: #ff6b35;
-            border-left: 8px solid #f5a623;
-            padding-left: 0.5em;
-            margin: 1.5em 0 0.8em;
-        }
-        h3 {
-            font-size: clamp(1.4rem, 5vw, 2rem);
-            color: #f5a623;
-            margin: 1.2em 0 0.5em;
-        }
-        p, li {
-            font-size: clamp(1rem, 3vw, 1.2rem);
-            font-weight: 400;
-            color: #ccc;
-        }
-        a {
-            color: #ff6b35;
-            text-decoration: underline wavy 2px rgba(255, 107, 53, 0.5);
-            transition: all 0.2s;
-        }
-        a:hover, a:focus {
-            color: #f5a623;
-            text-decoration-color: #f5a623;
-            outline: 3px dashed #f5a623;
-            outline-offset: 4px;
-        }
-        /* ----- LAYOUT (full bleed, asymmetric) ----- */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-            width: 100%;
-        }
-        .full-bleed {
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-            background: #222;
-            padding: 2rem 1.5rem;
-            border-top: 6px solid #f5a623;
-            border-bottom: 6px solid #ff6b35;
-        }
-        .grid-2col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-        .grid-3col {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-        }
-        .card {
-            background: #2a2a2a;
-            border: 3px solid #333;
-            padding: 1.5rem;
-            box-shadow: 8px 8px 0 #000;
-            transition: all 0.2s;
-        }
-        .card:hover {
-            border-color: #f5a623;
-            transform: translate(-2px, -2px);
-            box-shadow: 10px 10px 0 #000;
-        }
-        .card h3 {
-            margin-top: 0;
-            border-bottom: 3px dashed #ff6b35;
-            padding-bottom: 0.3em;
-        }
-        .card p {
-            font-size: 0.95rem;
-        }
-        .btn-cta {
-            display: inline-block;
-            background: #f5a623;
-            color: #1a1a1a !important;
-            font-weight: 900;
-            text-transform: uppercase;
-            padding: 0.8em 2em;
-            border: 3px solid #000;
-            box-shadow: 6px 6px 0 #000;
-            text-decoration: none !important;
-            transition: all 0.1s;
-            font-size: 1.2rem;
-            margin: 1em 0;
-        }
-        .btn-cta:hover {
-            background: #ff6b35;
-            transform: translate(2px, 2px);
-            box-shadow: 4px 4px 0 #000;
-        }
-        /* ----- NAV (brutalist) ----- */
-        nav {
-            background: #111;
-            border-bottom: 6px solid #f5a623;
-            padding: 0.8rem 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        nav .logo {
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 900;
-            font-size: 1.6rem;
-            color: #f5a623;
-            text-transform: uppercase;
-            text-decoration: none;
-            letter-spacing: -0.03em;
-        }
-        nav .logo:hover {
-            color: #ff6b35;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        nav ul li a {
-            color: #e0e0e0;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            padding: 0.3em 0.6em;
-            border: 2px solid transparent;
-            transition: all 0.2s;
-        }
-        nav ul li a:hover {
-            border-color: #f5a623;
-            background: #222;
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 5px;
-            background: none;
-            border: none;
-        }
-        .hamburger-menu span {
-            display: block;
-            width: 30px;
-            height: 4px;
-            background: #f5a623;
-            border-radius: 0;
-        }
-        .tel-link {
-            font-weight: 900;
-            background: #ff6b35;
-            color: #1a1a1a !important;
-            padding: 0.4em 1em;
-            border: 2px solid #000;
-            text-decoration: none !important;
-            transition: all 0.2s;
-            white-space: nowrap;
-        }
-        .tel-link:hover {
-            background: #f5a623;
-            transform: scale(1.05);
-        }
-        /* ----- FAQ (brutalist collapse) ----- */
-        .faq-item {
-            border: 3px solid #333;
-            margin-bottom: 0.5rem;
-            background: #222;
-        }
-        .faq-question {
-            background: #2a2a2a;
-            padding: 1rem 1.5rem;
-            font-weight: 700;
-            font-size: 1.1rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border: none;
-            width: 100%;
-            text-align: left;
-            color: #f5a623;
-            transition: background 0.2s;
-        }
-        .faq-question:hover {
-            background: #333;
-        }
-        .faq-question::after {
-            content: '+';
-            font-size: 1.5rem;
-            font-weight: 900;
-            transition: transform 0.3s;
-        }
-        .faq-question[aria-expanded="true"]::after {
-            transform: rotate(45deg);
-        }
-        .faq-answer {
-            padding: 1rem 1.5rem;
-            border-top: 2px dashed #ff6b35;
-            display: none;
-        }
-        .faq-answer.open {
-            display: block;
-        }
-        /* ----- FOOTER ----- */
-        footer {
-            margin-top: auto;
-            background: #111;
-            border-top: 6px solid #ff6b35;
-            padding: 2rem 1.5rem;
-            text-align: center;
-        }
-        footer p {
-            font-size: 0.9rem;
-            color: #777;
-        }
-        /* ----- RESPONSIVE 768 ----- */
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-            .grid-2col, .grid-3col {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            h1 {
-                font-size: 2.5rem;
-            }
-            h2 {
-                font-size: 1.8rem;
-                border-left-width: 6px;
-            }
-            nav {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 0.5rem;
-            }
-            nav ul {
-                display: none;
-                flex-direction: column;
-                gap: 0.5rem;
-                width: 100%;
-                padding: 1rem 0;
-            }
-            nav ul.show {
-                display: flex;
-            }
-            .hamburger-menu {
-                display: flex;
-                align-self: flex-end;
-            }
-            .tel-link {
-                align-self: flex-start;
-                margin-top: 0.5rem;
-            }
-            .full-bleed {
-                margin-left: -1rem;
-                margin-right: -1rem;
-                width: calc(100% + 2rem);
-                border-left: none;
-                border-right: none;
-            }
-        }
-        @media (max-width: 480px) {
-            .card {
-                padding: 1rem;
-            }
-            .btn-cta {
-                font-size: 1rem;
-                padding: 0.6em 1.5em;
-            }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta charset="UTF-8">
+<title>상암 유흥 꿀팁 — 정보</title>
+<meta name="description" content="상암 유흥을 깊이 있게 이해하고, 인원·시간·목적별 체크리스트와 현장 시그널을 제공합니다. 현장 판단에 즉시 활용 가능한 실용 가이드.">
+<meta name="keywords" content="상암, 유흥, 정보, 체크리스트, 현장 시그널, 인원, 시간대, 목적">
+<meta name="canonical" content="https://sangam-club-hot.node-link.shop/info">
+<meta property="og:title" content="상암 유흥 꿀팁 — 정보">
+<meta property="og:description" content="상암에서 유흥을 계획할 때 반드시 확인해야 할 인원·시간·목적별 핵심 요소와 현장 시그널을 한눈에 정리했습니다.">
+<meta property="og:url" content="https://sangam-club-hot.node-link.shop/about.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://sangam-club-hot.node-link.shop/assets/og-info.jpg">
+<link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://sangam-club-hot.node-link.shop/about.html">
 </head>
 <body>
-    <nav>
-        <a href="/" class="logo">상암꿀팁</a>
-        <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('nav ul').classList.toggle('show'); this.classList.toggle('active');">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul>
-            <li><a href="/">홈</a></li>
-            <li><a href="/info">정보</a></li>
-            <li><a href="/spots">스팟</a></li>
-            <li><a href="/tips">꿀팁</a></li>
-            <li><a href="/contact" class="tel-link">문의: 010-1234-5678</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <section class="container">
-            <h1>상암 유흥 정보<br>까발린다</h1>
-            <p style="font-size: 1.3rem; font-weight: 700; margin-bottom: 2rem;">야, 너 상암에서 놀 생각이면 기본 정보부터 챙겨라. 여기 다 적어놨다. 호구 안 되게.</p>
-        </section>
+<header class="n-wrap-a0wj">
+  <h1 class="r-item-tekz">상암 유흥 정보</h1>
+  <p class="r-item-tekz">투명한 레저 가이드, 현장의 원시적인 소리를 그대로 담아냅니다.</p>
+</header>
 
-        <section class="full-bleed">
-            <div class="container">
-                <h2>클럽 입장 전 필독</h2>
-                <div class="grid-2col">
-                    <div class="card">
-                        <h3>입장료 꼼수</h3>
-                        <p>주말에 현금 내라? 개소리. 카드 된다. 근데 대부분 1~2만원 더 받으려고 현금만 된다고 거짓말 쳐. 네이버 예약이나 얼리버드 티켓 챙겨가면 반값에 입장 가능. 게다가 여자친구 데려가면 여자 할인 적용되는 곳도 있으니까 미리 전화해라. 전화번호는 아래 FAQ에 있다.</p>
-                    </div>
-                    <div class="card">
-                        <h3>드레스 코드 부술 팁</h3>
-                        <p>야, 운동화 신고 간다고 쫓겨난다? 아니다. 클럽마다 다르다. 상암에서 제일 빡센 곳은 넥타이까지 요구하는데, 대부분 청바지+티셔츠만 아니면 된다. 근데 중요한 건 분위기: 가죽자켓이나 시계 하나 차면 입장 빨라진다. 그리고 여자들은 하이힐 필수 아님. 편한 신발 신고 와도 입장되는
+<nav class="v-nav-kl3w">
+  <table>
+    <tr>
+      <th><a href="/?page=home">홈</a></th>
+      <th><a href="/?page=guide">가이드</a></th>
+      <th><a href="/?page=info">정보</a></th>
+      <th><a href="/?page=faq">FAQ</a></th>
+      <th><a href="/?page=contact">연락처</a></th>
+    </tr>
+  </table>
+</nav>
+
+<main class="m-img-b65f">
+
+  <!-- SECTION 1: 인원 구성별 핵심 체크리스트 -->
+  <section class="r-item-tekz">
+    <h1>인원 별 현장 체크리스트</h1>
+    <p>소규모(2~4인) 파티는 조용한 라운지를 선호합니다. 입구에서 보이는 조명 색상과 소음 레벨을 즉시 파악해 분위기가 과도하게 시끄러운지 판단하세요. 매장 내부에 위치한 대형 스크린이 있으면 영상 콘텐츠가 풍부한 곳으로, 대화 중심이 아니라 시각적 자극을 원하는 경우에 적합합니다.</p>
+    <p>중규모(5~10인) 그룹은 복합 공간을 찾아야 합니다. 바와 클럽이 격리된 구역을 동시에 이용할 수 있는 장소가 이상적이며, 입구에서 보이는 인원 제한 표지판을 한눈에 확인해 사전 예약 필요 여부를 가려냅니다. 또한, 직원의 친절도와 주문 처리 속도를 눈으로 직접 체크해 서비스 붕괴 위험을 사전에 차단합니다.</p>
+    <p>대규모(10인 이상) 이벤트는 사전 협의가 필수입니다. 현장에 도착했을 때, 전용 파티룸 혹은 VIP 섹션이 명확히 구분돼 있는지 확인하세요. 비상구와 화재 안전 표지판이 눈에 띄게 배치돼 있는지, 그리고 방음 설계가 제대로 적용돼 있는지를 체크하면 소음 분쟁을 예방할 수 있습니다.</p>
+  </section>
+
+  <!-- SECTION 2: 시간대·목적 별 선택 기준 -->
+  <section class="r-item-tekz">
+    <h1>시간대·목적 별 선택 기준</h1>
+    <p>저녁 18시~20시 초반은 ‘시작’ 단계입니다. 이때는 메뉴판에 표시된 프로모션 가격과 음료 스페셜이 가장 매력적이며, 대기 시간이 짧은 편이니 빠른 입장을 원한다면 이 시간을 노리세요. 조명은 부드럽고, 배경음악이 낮게 흐르는 것이 일반적입니다.</p>
+    <p>밤 20시~23시 사이가 ‘핵심’ 단계입니다. 클럽이 본격적으로 가열되고, DJ와 라이브 퍼포먼스가 시작됩니다. 이때는 입구에서 보이는 입장 인원 제한표와 라인 길이를 즉시 판단해, 과도한 대기 시간이 발생할 경우 다른 장소로 이동하는 전략을 세워야 합니다.</p>
+    <p>심야 23시 이후는 ‘잔향’ 단계이며, 주류 메뉴가 제한되는 경우가 많습니다. 차분한 라운지나 1인용 바 좌석을 찾아야 하며, 직원의 마감 안내와 정산 시스템을 미리 확인해 불필요한 충돌을 방지합니다. 이때는 조명이 어두워지면서 고급스러운 분위기가 강조되니, 분위기 변화를 즐기고 싶다면 최적의 선택이 됩니다.</p>
+  </section>
+
+  <!-- SECTION 3: 현장 시그널 해석 가이드 -->
+  <section class="r-item-tekz">
+    <h1>현장 시그널 해석 가이드</h1>
+    <p>매장 입구에 놓인 ‘예약 필수’ 스티커는 단순히 예약을 권장한다는 뜻이 아니라, 현재 인원 초과 상태를 의미합니다. 이 시그널을 마주쳤다면, 대기 시간을 최소 30분 이상 예상하고, 대안 위치를 미리 검색해 두는 것이 현명합니다.</p>
+    <p>바 카운터 뒤쪽에 있는 ‘스페셜 메뉴’ 라벨은 가격 상승과 동시에 재고가 제한된다는 신호입니다. 현장에서 바로 주문하지 않으면 금방 품절될 위험이 크므로, 메뉴를 고를 때는 라벨을 빠르게 스캔하고, 주문을 서둘러야 합니다.</p>
+    <p>조명 색상이 청록색으로 바뀌는 순간은 ‘프리미엄 라운지’ 전환을 알리는 시그널입니다. 일반 구역보다 높은 가격대와 제한된 인원만 입장 가능하므로, 사전 예산 검토와 인원 조정을 반드시 진행하십시오.</p>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="x-wrap-ugvl">
+    <h2>자주 묻는 질문</h2>
+
+    <div class="x-wrap-ugvl">
+      <h2>Q1. 현장에서 무인 주문 시스템이 있나요?</h2>
+      <p>대부분의 라운지는 무인 키오스크를 도입했지만, 바 카운터에서는 여전히 직원 직접 주문이 필요합니다. 키오스크를 이용하면 주문 대기 시간이 단축되지만, 음료 커스터마이징 옵션이 제한될 수 있습니다.</p>
+    </div>
+
+    <div class="x-wrap-ugvl">
+      <h2>Q2. 주말에 예약 없이 방문하면 어떻게 되나요?</h2>
+      <p>주말은 대기 인원이 급격히 늘어나므로, 입구에서 대기표를 받게 됩니다. 대기표 번호와 예상 대기 시간을 반드시 기록해 두고, 주변 카페에서 시간을 보내는 것이 현명합니다.</p>
+    </div>
+
+    <div class="x-wrap-ugvl">
+      <h2>Q3. 사전 결제 옵션이 있나요?</h2>
+      <p>몇몇 클럽은 온라인 사전 결제와 함께 입장권을 제공하지만, 바와 라운지는 현장 결제가 기본입니다. 사전 결제 시 입구에서 체크인 절차가 간소화되니, 대규모 파티를 계획할 경우 적극 활용을 권합니다.</p>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="n-wrap-a0wj">
+  <p>© 2026 상암 유흥 정보. 모든 권리 보유.</p>
+</footer>
+
 </body>
 </html>
